@@ -1,0 +1,34 @@
+.accordion {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+
+    display: list-item;                               
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.carrot {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 5px;
+    float: right;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transition: all 0.2s ease; /* added for fun */
+    -webkit-transition: all 0.2s ease; /* added for fun */
+} 
+
+.carrot.active {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
